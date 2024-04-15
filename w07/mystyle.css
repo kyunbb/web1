@@ -1,0 +1,55 @@
+/* mystyle.css */
+h1 {
+    font-size: 28px;
+    text-align: center;
+    border-bottom: 5px rgb(0, 0, 0) solid;
+    margin: 0px;
+    padding: 20px;
+  }
+  
+  ol {
+    border-right: 5px solid rgb(0, 0, 0);
+    width: 100px;
+    margin: 0px;
+    padding: 20px;
+  }
+  body {
+    margin: 0px;
+  }
+  #grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+  }
+  h2 {
+    border-top: 0px rgb(0, 0, 0) solid;
+    margin: 0px;
+    padding: 20px;
+  }
+  @media(max-width: 800px){
+    #grid {
+        display: block;
+    }
+    h1 { 
+        border-bottom: 0px;
+        text-align: center;
+    }
+    #gird ol {
+        border-right: 0px;
+    }
+    ol {
+      border-right: 0px;
+    }
+  }
+  @media(max-height: 500px){
+    h2 { 
+        border-top: 5px rgb(0, 0, 0) solid;;
+        text-align: center;
+    }
+    #gird ol {
+        border-top: 15px;
+    }
+    ol {
+      border-bottom: 15px;
+      
+    }
+  }
